@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.todo-container
+{
+    margin: 20px auto;
+    max-width: 500px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,.2);
+
+}
+
+ul{
+    
+    list-style-type: none;
+    
+
+}
+
+#todo-header{
+
+background-color: #81c5ef;
+padding: 20px;
+text-align: center;
+
+
+}
+
+#todo-header h1{
+    padding: 20px;
+    font-size: 2em;
+
+}
+
+#todo-header input:hover,#todo-header input:focus
+{
+    background-color: #fff;
+
+}
+
+
+#todo-header input{
+    width: 80%;
+    padding: 15px;
+    border:none;
+    outline: none;
+    background-color: #1b97e5;
+    transition: background-color 0.3s;
+}
+
+#todo-header button{
+    padding: 15px;
+    border:none;
+    outline: none;
+    margin-left: -2px;
+    background-color: #558265;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.5s;
+
+}
+
+#todo-header button:hover{
+    background-color: #fff;
+    color: black;
+
+
+}
+
+#todo-main .no-todos{
+
+padding: 20px;
+text-align: center;
+font-size: 2em;
+font-family: Arial, Helvetica, sans-serif;
+background-color: #ececec;
+
+}
+
+#todo-main .todo:nth-child(odd)
+{
+                        /* 2n ispod 2n + 1 */
+    background-color: beige;
+
+}
+
+#todo-main .todo:nth-child(even)
+{
+
+    background-color: #d6ca97;
+
+}
+
+#todo-main .todo{
+
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    font-size: 0.6cm;
+    transition: opacity 0.4s;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#todo-main .todo button{
+
+    padding: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 1px;
+    opacity: 0.8;
+    transition: opacity 0.4s;
+
+}
+
+#todo-main .todo button:hover{
+
+    opacity: 1;
+
+}
+
+#todo-main .todo .up{
+
+    background-color: teal;
+    color:#fff;
+
+}
+
+#todo-main .todo .down{
+
+    background-color: sandybrown;
+    color:#fff;
+
+}
+
+#todo-main .todo .remove{
+
+    background-color:#ff751a;
+    color: #fff;
+   
+
+}
